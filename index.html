@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,21 +17,94 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Karla:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="styles/all.min.css">
+
 <body>
-    <header class="header container">
-        <div class="logo-wrapper"><a href="index.html"><img src="assets/logo-transparent.png" alt="logo image"></a></div>
+    <header class="header wrapper">
+        <div class="logo-wrapper"><a href="index.html"><img src="assets/logo.png" alt="logo image"></a>
+        </div>
+        <ul class="nav-bar">
+            <li class="nav-item active-item"><a href="">projects</a></li>
+            <li class="nav-item"><a href="">news</a></li>
+            <li class="nav-item"><a href="">about us</a></li>
+            <li class="nav-item"><a href="">contact</a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>It’s not living unless there’s style!</h3>
+                    <p>Your home should tell a story of who you are and be a collection of what you love</p>
+                </div>
+                <img src="/assets/img/2.jpg">
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>It’s not living unless there’s style!</h3>
+                    <p>Your home should tell a story of who you are and be a collection of what you love</p>
+                </div>
+                <img src="/assets/img/3.jpg">
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>It’s not living unless there’s style!</h3>
+                    <p>Your home should tell a story of who you are and be a collection of what you love</p>
+                </div>
+                <img src="/assets/img/4.jpg">
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>It’s not living unless there’s style!</h3>
+                    <p>Your home should tell a story of who you are and be a collection of what you love</p>
+                </div>
+                <video src="/assets/video/video1.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div id="next" onclick="next()"> > </div>
+        <div id="prev" onclick="prev()"> < </div>
+    </main>
+    <footer class="footer wrapper">
         <ul class="nav-bar">
             <li class="nav-item"><a href="">projects</a></li>
             <li class="nav-item"><a href="">news</a></li>
             <li class="nav-item"><a href="">about us</a></li>
             <li class="nav-item"><a href="">contact</a></li>
         </ul>
-    </header>
-    <main>
-        
-    </main>
+        <div class="address">
+            <h3>Contact</h3>
+            <address>
+                <span>Address:</span> Kote Afkhazi st. <br>
+                Tbilsi, Georgia, 0105
+            </address>
+            <a href="tel: +995000575757"><span>Phone:</span> 000575757</a>
+            <a href="mailto:rooftop@gmail.com"><span>E-mail:</span> rooftop@gmail.com</a>
+
+        </div>
+        <div class="location">
+            <h3>Location <i class="fa-sharp fa-solid fa-location-dot"></i></i></i></h3>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.3120234364283!2d44.80254914457501!3d41.6921993866157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf044fde893%3A0x239a65fd784e6a15!2z4YOZ4YOd4YOi4YOUIOGDkOGDpOGDruGDkOGDluGDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1684614583051!5m2!1ska!2sge" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+        </div>
+        <ul class="socials">
+            <li class="linkedin"><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li class="twitter"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl"></i></a></li>
+        </ul>
+
+    </footer>
 
     <script src="main.js"> </script>
-    
+
 </body>
+
 </html>
